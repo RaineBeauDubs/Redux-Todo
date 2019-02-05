@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Hello, Redux-Todo!</h1>
+        <h1>What ToDo ToDay?</h1>
       </div>
     );
   }
