@@ -1,7 +1,7 @@
 
 
 const initialState = {
-  todoList: [
+  todos: [
     {
       value: "Walk the iguana",
       completed: false
