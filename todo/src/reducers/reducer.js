@@ -1,4 +1,4 @@
-
+import { ADD_TODO } from '../actions/actions';
 
 const initialState = {
   todos: [
@@ -14,9 +14,18 @@ const initialState = {
 };
 
 function reducer(state = initialState, action) {
-  switch(action.type) {
+  switch (action.type) {
+    case ADD_TODO:
+      const newTodo = {
+        value: action.payload,
+        completed: false
+      }
+      return {
+        ...state,
+        todos: [...state.todos, newTodo]
+      }
     default:
-    return state;
+      return state;
   }
 }
 
