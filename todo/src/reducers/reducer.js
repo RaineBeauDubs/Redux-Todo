@@ -22,7 +22,7 @@ function reducer(state = initialState, action) {
       }
       return {
         ...state,
-        todos: [...state.todos, newTodo]
+        todos: [...state.todos, newTodo],
       }
     case TOGGLE_COMPLETED:
       return {

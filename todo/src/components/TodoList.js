@@ -40,6 +40,7 @@ class TodoList extends React.Component {
           type='text' 
           value={this.state.newTodo} 
           onChange={this.handleChanges}
+          placeholder='Add new ToDo...'
         />
         <button onClick={this.addTodo}>Add To List</button>
       </div>
